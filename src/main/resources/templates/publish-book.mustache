@@ -1,0 +1,34 @@
+<html>
+<body>
+    {{#error}}
+        <div>{{error}}</div>
+    {{/error}}
+    {{#notification}}
+        <div>{{notification}}</div>
+    {{/notification}}
+    {{#price}}
+        <div>For the publication of one book you will receive: ${{price}}</div>
+    {{/price}}
+    <div>
+        <form method="post">
+            <input type="text" name="title" placeholder="Title" />
+            <span>Choose genre</span>
+            <select name="genre">
+                <option value="DETECTIVE">detective</option>
+                <option value="FANTASY">fantasy</option>
+                <option value="NOVEL">novel</option>
+                <option value="SCIENCE">science</option>
+                <option value="AUTOBIOGRAPHY">autobiography</option>
+                <option value="FAIRY_TAIL">fairy tail</option>
+                <option value="STORY">story</option>
+                <option value="COMEDY">comedy</option>
+                <option value="DRAMA">drama</option>
+            </select>
+            <button type="submit">Publish</button>
+        </form>
+    </div>
+    {{#user}}
+        <a href="/author/{{login}}"><- Back</a>
+    {{/user}}
+</body>
+</html>

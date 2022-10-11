@@ -1,0 +1,20 @@
+<html>
+
+<body>
+<div>Purchased books</div>
+{{#books}}
+    <div>
+        {{#title}}<span>{{title}}</span>{{/title}}
+        {{#authorName}}<span>{{authorName}}</span>{{/authorName}}
+        {{#genre}}<span>{{genre}};</span>{{/genre}}
+        {{#purchasedBook}}
+            <span>customer login: </span>
+            {{#customer}}<span>{{login}};</span>{{/customer}}
+            <span>book id: </span>
+            {{#book}}<span>{{id}};</span>{{/book}}
+        {{/purchasedBook}}
+    </div>
+{{/books}}
+</body>
+<a href="/admin/main"><br><- Back</a>
+</html>

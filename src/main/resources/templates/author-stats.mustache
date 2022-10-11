@@ -1,0 +1,37 @@
+<html>
+<body>
+{{#profit}}
+    <div>
+        <span>Current profit: ${{profit}}</span>
+    </div>
+{{/profit}}
+<span>Books published: </span>
+{{#countBooks}}
+    <span>{{countBooks}}</span>
+{{/countBooks}}
+{{#books}}
+    <div>
+        <span>{{title}}</span>
+    </div>
+{{/books}}
+<span><br>Books bought: </span>
+{{#countPurchasedBooks}}
+    <span>{{countPurchasedBooks}}</span>
+{{/countPurchasedBooks}}
+
+{{#purchasedBooks}}
+    <div>
+        {{#book}}
+            <span>{{title}}: </span>
+        {{/book}}
+        {{#count}}
+            <span>{{count}}</span>
+        {{/count}}
+    </div>
+{{/purchasedBooks}}
+
+{{#user}}
+    <a href="/author/{{login}}"><p><- Back</a>
+{{/user}}
+</body>
+</html>

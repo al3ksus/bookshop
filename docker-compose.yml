@@ -1,0 +1,11 @@
+version: "3.0"
+
+services:
+
+  database:
+    image: postgres
+    ports:
+      - "5000:5432"
+    environment:
+      - POSTGRES_PASSWORD=7554
+      - POSTGRES_DB=bookshop

@@ -1,0 +1,20 @@
+<html>
+
+<body>
+<div>Purchased books</div>
+{{#books}}
+    <div>
+        {{#title}}<span>{{title}}</span>{{/title}}
+        {{#authorName}}<span>{{authorName}}</span>{{/authorName}}
+        {{#genre}}<span>{{genre}}</span>{{/genre}}
+        {{#purchasedBook}}
+            <span>book id: </span>
+            {{#book}}<span>{{id}}</span>{{/book}}
+        {{/purchasedBook}}
+    </div>
+{{/books}}
+</body>
+{{#user}}
+    <a href="/customer/{{login}}"><- Back</a>
+{{/user}}
+</html>
